@@ -1,4 +1,6 @@
-package com.dailycode
+package com.dailycode.days
+
+import com.dailycode.Test
 
 /***
  * Implement integer exponentiation. That is,
@@ -6,7 +8,7 @@ package com.dailycode
  ***/
 
 
-class DailyCodingProblem447 : Test{
+class DailyCodingProblem447 : Test {
 
     override fun runTest(){
         var startTime = System.nanoTime()

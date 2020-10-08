@@ -1,4 +1,6 @@
-package com.dailycode
+package com.dailycode.days
+
+import com.dailycode.Test
 
 /***
  *
