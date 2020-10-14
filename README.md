@@ -13,6 +13,9 @@ From DailyCodingProblem : https://www.dailycodingproblem.com/
              which deserializes the string back into the tree.
              
 4) **Day 4**: Given an array of integers, find the first missing positive integer in linear time and constant space. In other words, find the lowest positive integer that does not exist in the array. The array can contain duplicates and negative numbers as well.
+
+4) **Day 7**: Given the mapping a = 1, b = 2, ... z = 26, and an encoded message,
+              count the number of ways it can be decoded.
              
 5) **Day 447**: Implement the pow(x, y) function
              

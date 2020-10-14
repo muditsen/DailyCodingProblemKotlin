@@ -1,3 +1,6 @@
 /.idea/
 /out/
 /DailyCodingProblem.iml
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store
