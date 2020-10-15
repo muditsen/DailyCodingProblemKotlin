@@ -8,7 +8,7 @@ import com.dailycode.helper.TreeNode
  * Given the root to a binary tree, count the number of unival subtrees.
  */
 class Day8 : Test {
-
+    private var count = 0
     override fun runTest() {
         val treeNode = TreeNode(0)
         treeNode.left = TreeNode(1)
@@ -18,21 +18,24 @@ class Day8 : Test {
         treeNode.right?.left?.left = TreeNode(1)
         treeNode.right?.left?.right = TreeNode(1)
 
-        println(getUnivalTrees(treeNode))
+        getUnivalTrees(treeNode)
+        println(count)
     }
 
-    private fun getUnivalTrees(node: TreeNode?): Int {
+    private fun getUnivalTrees(node: TreeNode?): Boolean {
         if (node?.left == null && node?.right == null) {
-            return 1
+            count++
+            return true
         }
 
         val left = getUnivalTrees(node.left)
         val right = getUnivalTrees(node.right)
-        return if (left == 1 && right == 1) {
-            1 + left + right;
-        } else {
-            left + right;
+
+        val bool = left && right && ((node.left?.item ?: node.item) == node.item) && ((node.right?.item ?: node.item) == node.item)
+        if (bool) {
+            count++
         }
+        return bool
     }
 
 }
