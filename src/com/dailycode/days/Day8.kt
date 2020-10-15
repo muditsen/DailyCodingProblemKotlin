@@ -25,10 +25,14 @@ class Day8 : Test {
         if (node?.left == null && node?.right == null) {
             return 1
         }
-        if (node.item == node.left?.item && node.item == node.right?.item) {
-            return 1 + getUnivalTrees(node.left) + getUnivalTrees(node.right)
+
+        val left = getUnivalTrees(node.left)
+        val right = getUnivalTrees(node.right)
+        return if (left == 1 && right == 1) {
+            1 + left + right;
+        } else {
+            left + right;
         }
-        return getUnivalTrees(node.left) + getUnivalTrees(node.right)
     }
 
 }
