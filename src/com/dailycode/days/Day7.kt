@@ -1,6 +1,7 @@
 package com.dailycode.days
 
 import com.dailycode.Test
+import com.dailycode.helper.Helper
 
 /***
  *
@@ -16,6 +17,7 @@ class Day7 : Test {
             -1
         }
         println(decodeDp1("123412341234", 0, array))
+        Helper.printArr(array)
         println(decodeDp2("123412341234"))
     }
 
@@ -39,10 +41,10 @@ class Day7 : Test {
         }
 
         if (input[pos] == '1' || input[pos] == '2') {
-            array[pos] = decode(input, pos + 1) + decode(input, pos + 2)
+            array[pos] = decodeDp1(input, pos + 1,array) + decodeDp1(input, pos + 2,array)
             return array[pos];
         }
-        array[pos] = decode(input, pos + 1)
+        array[pos] = decodeDp1(input, pos + 1,array)
         return array[pos]
     }
 
