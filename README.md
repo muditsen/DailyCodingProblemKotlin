@@ -36,6 +36,7 @@ From DailyCodingProblem : https://www.dailycodingproblem.com/
 12)  **Day 12** : There exists a staircase with N steps, and you can climb up either 1 or 2 steps at a time. Given N, write a function that returns the number of unique ways you can climb the staircase. The order of the steps matters. And What if, instead of being able to climb 1 or 2 steps at a time, you could climb any number from a set of positive integers X? For example, if X = {1, 3, 5}, you could climb 1, 3, or 5 steps at a time.
 
 13)  **Day 13** : Given an integer k and a string s, find the length of the longest substring that contains at most k distinct characters.
-                                                                                                                                                                                                                                               
+
+14)  **Day 14** : The area of a circle is defined as πr^2. Estimate π to 3 decimal places using a Monte Carlo method.                                                                                                                                                                                                                             
 
 ## Others

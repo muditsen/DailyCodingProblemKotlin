@@ -1,9 +1,8 @@
 package com.dailycode
 
-import com.dailycode.days.Day12
-import com.dailycode.days.Day13
+import com.dailycode.days.Day14
 
 fun main(args: Array<String>) {
-    val test: Test = Day13()
+    val test: Test = Day14()
     test.runTest()
 }
