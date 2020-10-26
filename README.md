@@ -37,6 +37,8 @@ From DailyCodingProblem : https://www.dailycodingproblem.com/
 
 13)  **Day 13** : Given an integer k and a string s, find the length of the longest substring that contains at most k distinct characters.
 
-14)  **Day 14** : The area of a circle is defined as πr^2. Estimate π to 3 decimal places using a Monte Carlo method.                                                                                                                                                                                                                             
+14)  **Day 14** : The area of a circle is defined as πr^2. Estimate π to 3 decimal places using a Monte Carlo method. 
+                                                                                                                                                                                                                            
+15)  **Day 18** : The area of a circle is defined as πr^2. Estimate π to 3 decimal places using a Monte Carlo method.                                                                                                                                                                                                                             
 
 ## Others
