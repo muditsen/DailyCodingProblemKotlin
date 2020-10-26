@@ -97,11 +97,10 @@ class Day18 : Test {
 
             if (heap.top() == intArray[i - k]) {
                 heap.remove()
-            }/* else {
-                heap.list.removeAt(heap.list.size - 1)
-            }*/
-            while (heap.list.size > 0 && heap.top() < intArray[i]) {
-                heap.remove()
+            }
+
+            if (heap.list.size > 0 && heap.top() < intArray[i]) {
+                heap.list.clear()
             }
             heap.insert(intArray[i])
             println(heap.top())
