@@ -12,6 +12,8 @@ interface Heap<T> {
 
     fun remove(): Int
 
-    fun heapfy();
+    fun remove(ele: Int): Int
+
+    fun heapfy()
 
 }

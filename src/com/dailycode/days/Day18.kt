@@ -15,7 +15,7 @@ import kotlin.random.Random
 class Day18 : Test {
 
     override fun runTest() {
-        val heap = BinaryMaxHeap()
+        /*val heap = BinaryMaxHeap()
         heap.insert(10)
         println(heap.top())
         Helper.printArr(heap.list)
@@ -69,18 +69,18 @@ class Day18 : Test {
 
 
         println(heap.remove())
-        Helper.printArr(heap.list)
+        Helper.printArr(heap.list)*/
 
 
         /*solution(intArrayOf(1, 3, -1, -3, 5, 3, 6, 7), 3)
         solution(intArrayOf(8, 5, 10, 7, 9, 4, 15, 12, 90, 13), 4)
         solution(intArrayOf(1, 2, 3, 1, 4, 5, 2, 3, 6), 3)*/
-        val arr = IntArray(25) {
+        /*val arr = IntArray(25) {
             abs(Random.nextInt() % 25)
         }
         Helper.printArr(arr)
-        solution(arr, 3)
-        //solution(intArrayOf(8, 5, 10, 7, 9, 4, 15, 12, 90, 13), 4)
+        solution(arr, 3)*/
+        solution(intArrayOf(8, 5, 10, 7, 6, 4, 2, 12, 90, 13), 4)
         //solution(intArrayOf(8, 5, 10, 7, 9, 4, 15, 12, 90, 13), 5)
         //solution(intArrayOf(9, 8, 7, 6, 5, 4, 3, 2, 1), 3)
     }
@@ -93,19 +93,14 @@ class Day18 : Test {
         }
         println(heap.top())
         for (i in k until intArray.size) {
-            Helper.printArr(heap.list)
-
-            if (heap.top() == intArray[i - k]) {
-                heap.remove()
-            }
-
+            //Helper.printArr(heap.list)
+            heap.remove(intArray[i - k])
             if (heap.list.size > 0 && heap.top() < intArray[i]) {
                 heap.list.clear()
             }
             heap.insert(intArray[i])
             println(heap.top())
         }
-
         println()
     }
 

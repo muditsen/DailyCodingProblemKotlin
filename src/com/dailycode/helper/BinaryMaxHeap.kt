@@ -42,7 +42,40 @@ class BinaryMaxHeap() : Heap<Int> {
         var n = 0
         var l: Int
         var r: Int
+        //Helper.printArr(list)
 
+        while (n < list.size - 1) {
+            l = n * 2 + 1
+            r = n * 2 + 2
+            if (getElement(l) > getElement(n) && getElement(l) > getElement(r)) {
+                val tmp = list[l]
+                list[l] = list[n]
+                list[n] = tmp
+                n = l
+            } else if (getElement(r) > getElement(n) && getElement(r) > getElement(l)) {
+                val tmp = list[r]
+                list[r] = list[n]
+                list[n] = tmp
+                n = r
+            } else {
+                break
+            }
+        }
+
+        return top
+    }
+
+    override fun remove(ele: Int): Int {
+        val pos = list.indexOf(ele)
+        if (pos == -1) {
+            return -1
+        }
+        val top = list[pos]
+        list[pos] = list[list.size - 1]
+        list.removeLast()
+        var n = pos
+        var l: Int
+        var r: Int
         //Helper.printArr(list)
 
         while (n < list.size - 1) {
