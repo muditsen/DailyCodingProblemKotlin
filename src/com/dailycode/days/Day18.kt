@@ -72,20 +72,20 @@ class Day18 : Test {
         Helper.printArr(heap.list)*/
 
 
-        /*solution(intArrayOf(1, 3, -1, -3, 5, 3, 6, 7), 3)
+        solution(intArrayOf(1, 3, -1, -3, 5, 3, 6, 7), 3)
         solution(intArrayOf(8, 5, 10, 7, 9, 4, 15, 12, 90, 13), 4)
-        solution(intArrayOf(1, 2, 3, 1, 4, 5, 2, 3, 6), 3)*/
-        /*val arr = IntArray(25) {
-            abs(Random.nextInt() % 25)
+        solution(intArrayOf(1, 2, 3, 1, 4, 5, 2, 3, 6), 3)
+        val arr = IntArray(1000000) {
+            abs(Random.nextInt() % 1000000)
         }
         Helper.printArr(arr)
-        solution(arr, 3)*/
+        solution(arr, 100)
         solution(intArrayOf(8, 5, 10, 7, 6, 4, 2, 12, 90, 13), 4)
-        //solution(intArrayOf(8, 5, 10, 7, 9, 4, 15, 12, 90, 13), 5)
-        //solution(intArrayOf(9, 8, 7, 6, 5, 4, 3, 2, 1), 3)
+        solution(intArrayOf(8, 5, 10, 7, 9, 4, 15, 12, 90, 13), 5)
+        solution(intArrayOf(9, 8, 7, 6, 5, 4, 3, 2, 1), 3)
     }
 
-    //With O(n) time and O(n) space.
+    //With O(n*k) time and O(k) space.
     private fun solution(intArray: IntArray, k: Int) {
         val heap = BinaryMaxHeap()
         for (i in 0 until k) {
