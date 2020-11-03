@@ -39,6 +39,7 @@ From DailyCodingProblem : https://www.dailycodingproblem.com/
 
 14)  **Day 14** : The area of a circle is defined as πr^2. Estimate π to 3 decimal places using a Monte Carlo method. 
                                                                                                                                                                                                                             
-15)  **Day 18** : The area of a circle is defined as πr^2. Estimate π to 3 decimal places using a Monte Carlo method.                                                                                                                                                                                                                             
+15)  **Day 18** : Given an array of integers and a number k, where 1 <= k <= length of the array,
+                  compute the maximum values of each subarray of length k.                                                                                                                                                                                                                             
 
 ## Others
