@@ -42,4 +42,14 @@ From DailyCodingProblem : https://www.dailycodingproblem.com/
 15)  **Day 18** : Given an array of integers and a number k, where 1 <= k <= length of the array,
                   compute the maximum values of each subarray of length k.                                                                                                                                                                                                                             
 
-## Others
+
+##LeetCode
+1) **Consecutive Characters **: Given a string s, the power of the string is the maximum length of a non-empty substring that contains only one unique character.
+                                Return the power of the string.
+   
+
+## DataStructures
+1) Binary Tree
+2) Binary Search Tree
+3) AVL Tree (Upcoming...)
+4) Red Black Tree(Upcoming...)
