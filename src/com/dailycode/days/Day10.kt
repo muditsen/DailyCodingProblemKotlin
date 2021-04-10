@@ -23,11 +23,11 @@ class Day10 : Test {
     }
 
     override fun runTest() {
-        schedule(method = Day10()::testMethod, 10000)
-        schedule(method = Day10()::testMethod, 500)
+        //schedule(method = Day10()::testMethod, 10000)
+        //schedule(method = Day10()::testMethod, 500)
     }
 
-    private fun testMethod() {
+    private fun testMethod(result:(abs:String)->Unit,time:Int) {
         println("Executing test...")
     }
 

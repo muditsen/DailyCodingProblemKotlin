@@ -9,6 +9,13 @@ class Helper {
             println()
         }
 
+        fun printArr(intArray: LongArray) {
+            for (i in intArray) {
+                print("$i ")
+            }
+            println()
+        }
+
         fun printArr(intArray: ArrayList<Int>) {
             for (i in intArray) {
                 print("$i ")

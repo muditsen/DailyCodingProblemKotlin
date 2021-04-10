@@ -27,11 +27,11 @@ class Day3 :Test {
         println(checkEquality(root,rootDes))
     }
 
-    private fun serialize(root: TreeNode?):String{
+    fun serialize(root: TreeNode?):String{
         if(root == null){
             return "#"
         }
-        return ""+root.item + serialize(root.left) + serialize(root.right);
+        return ""+root.item + serialize(root.left) + serialize(root.right)
     }
 
     private var currPos:Int = 0

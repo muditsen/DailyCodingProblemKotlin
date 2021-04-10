@@ -72,7 +72,7 @@ class Day18 : Test {
         Helper.printArr(heap.list)*/
 
 
-        solution(intArrayOf(1, 3, -1, -3, 5, 3, 6, 7), 3)
+        solution(k=3,intArray = intArrayOf(1, 3, -1, -3, 5, 3, 6, 7))
         solution(intArrayOf(8, 5, 10, 7, 9, 4, 15, 12, 90, 13), 4)
         solution(intArrayOf(1, 2, 3, 1, 4, 5, 2, 3, 6), 3)
         val arr = IntArray(1000000) {
@@ -86,7 +86,7 @@ class Day18 : Test {
     }
 
     //With O(n*k) time and O(k) space.
-    private fun solution(intArray: IntArray, k: Int) {
+    private fun solution(intArray: IntArray, k: Int = 3) {
         val heap = BinaryMaxHeap()
         for (i in 0 until k) {
             heap.insert(intArray[i])
